@@ -1,0 +1,10 @@
+syntax = "proto3";
+package service;
+
+import "../device/device.proto";
+import "../login/auth/auth.proto";
+import "../login/email/email.proto";
+
+service RpcRequestService {
+    rpc EmailLogin(emailLogin.EmailLoginRequest) returns (emailLogin.EmailLoginResponse);
+}
