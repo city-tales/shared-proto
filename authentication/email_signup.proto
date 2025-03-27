@@ -1,15 +1,15 @@
 syntax = "proto3";
 package emailSignUp;
 
-import "../device/device.proto";
+import "./device.proto";
 
 message UserEmailSignUpRequest {
     string email = 1;
     string password = 2;
     string name = 3;
     string username = 4;
-    int32 phoneNumber = 5;
-    int32 alternatePhone = 6;
+    uint32 phoneNumber = 5;
+    uint32 alternatePhone = 6;
 }
 
 message EmailSignUpRequest {
