@@ -8,8 +8,10 @@ message UserEmailSignUpRequest {
     string password = 2;
     string name = 3;
     string username = 4;
-    uint32 phoneNumber = 5;
-    uint32 alternatePhone = 6;
+    string primaryCountryCode = 5;
+    uint32 phoneNumber = 6;
+    string secondaryCountryCode = 7;
+    uint32 alternatePhone = 8;
 }
 
 message EmailSignUpRequest {
