@@ -9,9 +9,9 @@ message UserEmailSignUpRequest {
     string name = 3;
     string username = 4;
     string primaryCountryCode = 5;
-    uint32 phoneNumber = 6;
+    uint64 phoneNumber = 6;
     string secondaryCountryCode = 7;
-    uint32 alternatePhone = 8;
+    uint64 alternatePhone = 8;
 }
 
 message EmailSignUpRequest {
