@@ -19,4 +19,7 @@ message EmailSignUpRequest {
     device.DeviceInformation userDeviceInformation = 2;
 }
 
-message EmailSignUpResponse {}
+message EmailSignUpResponse {
+    string message = 1;
+    uint32 status_code = 2;
+}
