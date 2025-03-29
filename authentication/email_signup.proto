@@ -20,6 +20,7 @@ message EmailSignUpRequest {
 }
 
 message EmailSignUpResponse {
-    string message = 1;
-    uint32 statusCode = 2;
+    string token = 1;
+    string message = 2;
+    uint32 statusCode = 3;
 }
