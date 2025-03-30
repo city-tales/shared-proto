@@ -9,9 +9,9 @@ message UserEmailSignUpRequest {
     string name = 3;
     string username = 4;
     string primaryCountryCode = 5;
-    uint64 phoneNumber = 6;
+    string phoneNumber = 6;
     string secondaryCountryCode = 7;
-    uint64 alternatePhone = 8;
+    string alternatePhone = 8;
 }
 
 message EmailSignUpRequest {
@@ -19,4 +19,8 @@ message EmailSignUpRequest {
     device.DeviceInformation userDeviceInformation = 2;
 }
 
-message EmailSignUpResponse {}
+message EmailSignUpResponse {
+    string token = 1;
+    string message = 2;
+    uint32 statusCode = 3;
+}
