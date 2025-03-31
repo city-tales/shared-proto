@@ -7,11 +7,10 @@ message UserEmailSignUpRequest {
     string email = 1;
     string password = 2;
     string name = 3;
-    string username = 4;
-    string primaryCountryCode = 5;
-    string phoneNumber = 6;
-    string secondaryCountryCode = 7;
-    string alternatePhone = 8;
+    string primaryCountryCode = 4;
+    string phoneNumber = 5;
+    string secondaryCountryCode = 6;
+    string alternatePhone = 7;
 }
 
 message EmailSignUpRequest {
