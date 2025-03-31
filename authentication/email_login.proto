@@ -13,4 +13,10 @@ message EmailLoginRequest {
     device.DeviceInformation userDeviceInformation = 2;
 }
 
-message EmailLoginResponse {}
+message EmailLoginResponse {
+    string token = 1;
+    string message = 2;
+    bool verified = 3;
+    uint32 statusCode = 4;
+    bool retryVerification = 5;
+}
