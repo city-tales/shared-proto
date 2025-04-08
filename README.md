@@ -22,6 +22,11 @@ Integration of Proto files in microservices and API Gateway:
    ```bash
    git submodule add https://github.com/city-tales/shared-proto.git /path/to/shared-proto
 
+2. If it does not work try with commands
+   ```
+   git submodule init     
+   git submodule update     
+   ```
 ### Error Handling and Logging
 Standardized error handling and logging definitions is implemented to ensure consistency across all services.
 
