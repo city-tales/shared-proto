@@ -5,9 +5,12 @@ import "./device.proto";
 import "./auth.proto";
 import "./email_login.proto";
 import "./email_signup.proto";
+import "./email_verification.proto";
 
 service RpcRequestService {
     rpc EmailSignUp(emailSignUp.EmailSignUpRequest) returns (emailSignUp.EmailSignUpResponse);
 
     rpc EmailLogin(emailLogin.EmailLoginRequest) returns (emailLogin.EmailLoginResponse);
+
+    rpc EmailVerificationRequest(emailVerification.EmailVerificationRequest) returns (emailVerification.EmailVerificationResponse);
 }
