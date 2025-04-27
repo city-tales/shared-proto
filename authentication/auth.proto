@@ -1,15 +1,10 @@
 syntax = "proto3";
 package authVerification;
 
-message IsMFAEnabled {
-    bool isPhoneVerified = 1;
-    bool enabled = 2;
-}
-
 message AuthVerification {
     bool isEmailVerified = 1;
     bool isGoogleSignedIn = 2;
     bool isAppleSignedIn = 3;
     bool isPasswordLess = 4;
-    IsMFAEnabled isMFAEnabled = 5;
+    bool isMFAEnabled = 5;
 }
