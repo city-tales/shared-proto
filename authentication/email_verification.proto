@@ -1,0 +1,12 @@
+syntax = "proto3";
+package emailVerification;
+
+message EmailVerificationRequest {
+    string token = 1;
+}
+
+message EmailVerificationResponse {
+    bool success = 1;
+    string message = 2;
+    uint32 statusCode = 3;
+}
