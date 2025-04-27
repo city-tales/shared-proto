@@ -1,0 +1,22 @@
+syntax = "proto3";
+package emailSignUp;
+
+import "./device.proto";
+
+message UserEmailSignUpRequest {
+    string email = 1;
+    string password = 2;
+    string name = 3;
+    string username = 4;
+    string primaryCountryCode = 5;
+    uint64 phoneNumber = 6;
+    string secondaryCountryCode = 7;
+    uint64 alternatePhone = 8;
+}
+
+message EmailSignUpRequest {
+    UserEmailSignUpRequest userEmailSignUpRequest = 1;
+    device.DeviceInformation userDeviceInformation = 2;
+}
+
+message EmailSignUpResponse {}

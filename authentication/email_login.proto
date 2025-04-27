@@ -1,0 +1,16 @@
+syntax = "proto3";
+package emailLogin;
+
+import "./device.proto";
+
+message UserEmailLoginRequest {
+    string email = 1;
+    string password = 2;
+}
+
+message EmailLoginRequest {
+    UserEmailLoginRequest userEmailLoginRequest = 1;
+    device.DeviceInformation userDeviceInformation = 2;
+}
+
+message EmailLoginResponse {}

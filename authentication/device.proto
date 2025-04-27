@@ -1,0 +1,12 @@
+syntax = "proto3";
+package device;
+
+message DeviceInformation {
+    string deviceType = 1;
+    string browserInfo = 2;
+    string ipAddress = 3;
+    string deviceId = 4;
+    string platform = 5;
+    string deviceName = 6;
+    string loginTime = 7;
+}
