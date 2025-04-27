@@ -7,4 +7,6 @@ message EmailVerificationRequest {
 
 message EmailVerificationResponse {
     bool success = 1;
+    string message = 2;
+    uint32 statusCode = 3;
 }
