@@ -12,5 +12,5 @@ service RpcRequestService {
 
     rpc EmailLogin(emailLogin.EmailLoginRequest) returns (emailLogin.EmailLoginResponse);
 
-    rpc EmailVerificationRequest(emailVerification.EmailVerificationRequest) returns (emailVerification.EmailVerificationResponse);
+    rpc EmailVerification(emailVerification.EmailVerificationRequest) returns (emailVerification.EmailVerificationResponse);
 }
