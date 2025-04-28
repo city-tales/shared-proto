@@ -22,4 +22,5 @@ message EmailSignUpResponse {
     string token = 1;
     string message = 2;
     uint32 statusCode = 3;
+    bool verified = 4;
 }
