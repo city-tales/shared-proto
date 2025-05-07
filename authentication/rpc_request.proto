@@ -6,6 +6,7 @@ import "./auth.proto";
 import "./email_login.proto";
 import "./email_signup.proto";
 import "./email_verification.proto";
+import "./passwordless_authentication.proto";
 
 service RpcRequestService {
     rpc EmailSignUp(emailSignUp.EmailSignUpRequest) returns (emailSignUp.EmailSignUpResponse);
@@ -13,4 +14,6 @@ service RpcRequestService {
     rpc EmailLogin(emailLogin.EmailLoginRequest) returns (emailLogin.EmailLoginResponse);
 
     rpc EmailVerification(emailVerification.EmailVerificationRequest) returns (emailVerification.EmailVerificationResponse);
+
+    rpc PasswordlessAuthentication(passwordlessAuthentication.PasswordlessAuthenticationRequest) returns (passwordlessAuthentication.PasswordlessAuthenticationResponse);
 }
