@@ -1,0 +1,26 @@
+syntax = "proto3";
+package googleAuthentication;
+
+import "./device.proto";
+
+message UserGoogleAuthenticationRequest {
+    string email = 1;
+    string firstName = 2;
+    string lastName = 3;
+    string name = 4;
+    string profilePicture = 5;
+    bool verifiedEmail = 6;
+}
+
+message GoogleAuthenticationRequest {
+    GoogleAuthenticationRequest googleAuthenticationRequest = 1;
+    device.DeviceInformation userDeviceInformation = 2;
+}
+
+message GoogleAuthenticationResponse {
+    string name = 1;
+    string token = 2;
+    string message = 3;
+    uint32 statusCode = 4;
+    bool retryVerification = 5;
+}
