@@ -13,7 +13,7 @@ message UserGoogleAuthenticationRequest {
 }
 
 message GoogleAuthenticationRequest {
-    GoogleAuthenticationRequest googleAuthenticationRequest = 1;
+    UserGoogleAuthenticationRequest userGoogleAuthenticationRequest = 1;
     device.DeviceInformation userDeviceInformation = 2;
 }
 
