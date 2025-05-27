@@ -2,7 +2,6 @@ syntax = "proto3";
 package service;
 
 import "./device.proto";
-import "./auth.proto";
 import "./email_login.proto";
 import "./email_signup.proto";
 import "./email_verification.proto";
