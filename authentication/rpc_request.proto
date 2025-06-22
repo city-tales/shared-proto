@@ -5,6 +5,7 @@ import "./device.proto";
 import "./email_login.proto";
 import "./email_signup.proto";
 import "./email_verification.proto";
+import "./email_forgot_password.proto";
 import "./passwordless_authentication.proto";
 import "./google_auth.proto";
 
@@ -14,6 +15,8 @@ service RpcRequestService {
     rpc EmailLogin(emailLogin.EmailLoginRequest) returns (emailLogin.EmailLoginResponse);
 
     rpc EmailVerification(emailVerification.EmailVerificationRequest) returns (emailVerification.EmailVerificationResponse);
+
+    rpc EmailForgotPassword(emailForgotPassword.EmailForgotPasswordRequest) returns (emailForgotPassword.EmailForgotPasswordResponse);
 
     rpc PasswordlessAuthentication(passwordlessAuthentication.PasswordlessAuthenticationRequest) returns (passwordlessAuthentication.PasswordlessAuthenticationResponse);
 
