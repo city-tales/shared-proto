@@ -7,6 +7,7 @@ import "./email_signup.proto";
 import "./email_verification.proto";
 import "./passwordless_authentication.proto";
 import "./google_auth.proto";
+import "./update_password_for_email.proto";
 
 service RpcRequestService {
     rpc EmailSignUp(emailSignUp.EmailSignUpRequest) returns (emailSignUp.EmailSignUpResponse);
@@ -18,4 +19,6 @@ service RpcRequestService {
     rpc PasswordlessAuthentication(passwordlessAuthentication.PasswordlessAuthenticationRequest) returns (passwordlessAuthentication.PasswordlessAuthenticationResponse);
 
     rpc GoogleAuthentication(googleAuthentication.GoogleAuthenticationRequest) returns (googleAuthentication.GoogleAuthenticationResponse);
+
+    rpc UpdatePasswordForEmail(updatePasswordForEmail.UpdatePasswordForEmailRequest) returns (updatePasswordForEmail.UpdatePasswordForEmailResponse);
 }
