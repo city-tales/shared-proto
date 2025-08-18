@@ -1,6 +1,7 @@
 syntax = "proto3";
 package service;
 
+import "./health_check.proto";
 import "./device.proto";
 import "./email_login.proto";
 import "./email_signup.proto";
@@ -11,6 +12,8 @@ import "./google_auth.proto";
 import "./update_password_for_email.proto";
 
 service RpcRequestService {
+    rpc HealthCheck(healthCheck.HealthCheckRequest) returns (healthCheck.HealthCheckResponse);
+
     rpc EmailSignUp(emailSignUp.EmailSignUpRequest) returns (emailSignUp.EmailSignUpResponse);
 
     rpc EmailLogin(emailLogin.EmailLoginRequest) returns (emailLogin.EmailLoginResponse);
